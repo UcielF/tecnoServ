@@ -275,5 +275,14 @@ a:hover {
   }
 }
 
+@media (max-width: 480px) {
+  #servicios,
+  #contacto {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+}
+
 
 
