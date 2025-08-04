@@ -267,22 +267,28 @@ a:hover {
 
 @media (max-width: 480px) {
   .logo {
-    margin-top: 1rem; /* o 0rem si querés pegado pero no fuera de vista */
+    margin-top: 1rem;
   }
+
+  #servicios,
+  #contacto {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    max-width: 90%;
+    margin: 2rem auto;
+  }
+}
+
 
   #encabezado-completo {
     padding-top: 3rem; /* más espacio superior en móvil */
   }
 }
 
-@media (max-width: 480px) {
-  #servicios,
-  #contacto {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    padding: 2rem;
-  }
-}
+
+
 
 
 
