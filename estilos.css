@@ -65,7 +65,7 @@ header h1 {
 .redes-flotantes {
   position: fixed;
   bottom: 90px;
-  right: 60px;
+  right: 40px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -91,11 +91,11 @@ header h1 {
 
 .icono.whatsapp:hover {
   transform: scale(1.2);
-  color: #00ffcc;   /* o el color que quieras al hacer hover */
+  color: #00ffcc;   
 }
 
 .icono.instagram:hover {
-  color: #f40166;       /* color al hacer hover, elegí el que te guste */
+  color: #f40166;      
 }
 
 /* eliminamos los fondos específicos */
@@ -162,7 +162,7 @@ footer {
   font-size: 0.9rem;
   color: #aaa;
   background: rgba(0, 0, 0, 0.4); /* fondo oscuro semi-transparente */
-  backdrop-filter: blur(2px);     /* opcional: da efecto de vidrio/filtro suave */
+  backdrop-filter: blur(2px);     /* da efecto de vidrio/filtro suave */
 }
 
 a:hover {
@@ -185,7 +185,7 @@ a:hover {
 }
 
 #servicios {
-  margin-top: 4rem;    /* o más si querés más separación */
+  margin-top: 4rem;    
   text-align: center;
 }
 
@@ -208,7 +208,7 @@ a:hover {
 }
 
 #servicios li:hover {
-  color: #00ff95; /* verde neón o el verde que elijas */
+  color: #00ff95; 
   cursor: pointer;
   transition: color 0.3s ease;
   transform: scale(1.05)
@@ -229,8 +229,8 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  min-height: 60vh; /* antes era 100vh */
-  margin-top: 1rem; /* aumentá este valor para más separación */
+  min-height: 60vh; 
+  margin-top: 1rem; /* aumenta para más separación */
   backdrop-filter: blur(4px);
 }
 
@@ -274,4 +274,5 @@ a:hover {
     padding-top: 3rem; /* más espacio superior en móvil */
   }
 }
+
 
