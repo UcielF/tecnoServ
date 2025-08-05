@@ -217,6 +217,7 @@ a:hover {
 #contacto {
   margin-top: 0.5rem;
   text-align: center;
+  margin-bottom: 0.2rem;
 }
 
 
@@ -279,6 +280,7 @@ a:hover {
     padding: 2rem;
     max-width: 90%;
     margin: 1rem auto;
+    margin-bottom: 0.2rem;
   }
 }
 
@@ -287,6 +289,7 @@ a:hover {
     padding-top: 3rem; /* más espacio superior en móvil */
   }
 }
+
 
 
 
