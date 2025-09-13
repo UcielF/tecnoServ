@@ -29,7 +29,7 @@ header {
 #encabezado-completo .logo {
   display: block;
   height: auto;
-  max-width: clamp(150px, 25vw, 250px); /* ajustá valores según prefieras 
+  max-width: clamp(150px, 25vw, 250px);
   margin: 0 auto 1rem;
 }
 
