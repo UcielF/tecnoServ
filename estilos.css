@@ -29,13 +29,13 @@ header {
 #encabezado-completo .logo {
   display: block;
   height: auto;
-  max-width: clamp(150px, 25vw, 250px);
+  max-width: clamp(280px, 25vw, 350px);
   margin: 0 auto 1rem;
 }
 
 /* En mobile, un toque más chico */
 @media (max-width: 480px) {
-  #encabezado-completo .logo { max-width: 200px; }
+  #encabezado-completo .logo { max-width: 250px; }
 }
 
 header h1 {  
@@ -242,7 +242,7 @@ a:hover {
 }  
 
 .logo-footer {  
-  width: 90px;  
+  width: 60px;  
   height: auto;  
   margin-bottom: 0.5rem;  
   display: block;  
