@@ -267,7 +267,7 @@ body {
 
   /* Degradado que parte del negro y baja hacia los tonos de TecnoServ */
   background: linear-gradient(180deg,
-    #00000054 0%,
+    #00000048 0%,
     /*#0a0a0a7a 10%,*/
     var(--color-animado) 60%,
     var(--violeta) 95%);
@@ -413,7 +413,7 @@ body {
 /* Dots */
 .dots {
   position: absolute;
-  bottom: 30px;
+  bottom: 55px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -555,13 +555,14 @@ body {
 }
 
 .subtitulo-seccion {
-  color: var(--color-animado);
+  color: var(--verde);
   font-size: 1.6rem;
   margin-top: 60px;
   margin-bottom: 25px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-shadow: 0 0 15px var(--color-animado), 0 0 25px var(--verde);;
 }
 
 /*
@@ -621,13 +622,13 @@ body {
 .tarjeta-servicio:hover h4 {
   color: var(--verde);
   transform: translateZ(20px);
-  text-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  text-shadow: 0 0 15px var(--color-animado), 0 0 25px var(--verde);
 }
 
 .tarjeta-servicio:hover p {
   transform: translateZ(55px) scale(1.05);
   opacity: 0.95;
-  text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.733);
+  text-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
 
@@ -960,6 +961,7 @@ body {
 
   .dots{
     left: 43%;
+    bottom: -10%;
   }
   
 }
