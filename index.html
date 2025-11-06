@@ -1,129 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tecnoserv - Sevicios tecnológicos</title>
-  <link rel="icon" type="image/png" href="logoNuevo3Web.png" />
-
-  <!-- Estilos -->
-  <link rel="stylesheet" href="estilos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Fuente Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TecnoServ</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- Fondo animado Vanta.js -->
-  <div id="fondo-animado"></div>
+  <!-- Contenedor del fondo animado -->
+  <div id="background"></div>
 
-  <!-- Íconos flotantes a la derecha -->
-  <div class="redes-flotantes">
-    <a href="https://instagram.com/_tecnoserv" target="_blank" class="icono instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://wa.me/2236350048" target="_blank" class="icono whatsapp">
-      <i class="fab fa-whatsapp"></i>
-
-
-    </a>
-  </div>
-
-  <!-- Encabezado con logo y nombre -->
-  <header id="encabezado-completo">
-    <div class="contenido-header">
-      <img src="logoNuevo3Web.png" alt="logoNuevo3Web" class="logo" />
-     <!-- <h1 data-aos="fade-down">tecnoserv</h1> -->
-      <p data-aos="fade-up">
-        Nos especializamos en la reparación y mantenimiento de computadoras de escritorio y notebooks.
-        Diseño de página web y contenido visual. Ofrecemos atención personalizada, 
-        diagnósticos rápidos y presupuestos sin cargo.
-        ¡No dudes en escribirnos!
-      </p>
+  <!-- Contenedor central -->
+  <main class="hero">
+    <div class="overlay">
+    <img src="/assets/logo1.svg" alt="Logo TecnoServ" class="logo">
+    <h1 class="title">TECNO·SERV</h1>
+    <p class="subtitle">Diseño, tecnología y marketing digital<br>Impulsá tu negocio.</p>
+    <a href="index2.html" class="btn">Conocer más</a>
     </div>
-  </header>
+  </main>
+
+  <script>
+const overlay = document.querySelector('.overlay');
+
+overlay.addEventListener('mousemove', e => {
+  const rect = overlay.getBoundingClientRect();
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
+  const centerX = rect.width / 2;
+  const centerY = rect.height / 2;
   
-
+  const rotateX = ((y - centerY) / centerY) * 8;   // intensidad eje X
+  const rotateY = ((x - centerX) / centerX) * -8;  // intensidad eje Y
   
-  <!-- Servicios -->
-  <section id="servicios" data-aos="fade-up" data-aos-offset="300">
-  <h2>Servicio técnico</h2>
-  <ul>
-    <li data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
-      <i class="fas fa-tools"></i> Reparación de Equipos
-    </li>
-    <li data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
-      <i class="fas fa-laptop-code"></i> instalación y actualización de sistema operatvo 
-    </li>
-    <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
-      <i class="fas fa-shield-alt"></i> Revisón de fallas y virus informáticos
-    </li>
-    <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
-      <i class="fas fa-desktop"></i> Armado de pc para uso profesional o gaming
-    </li>
-    <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
-      <i class="fas fa-broom"></i> Limpieza de hardware y optimización
-    </li>
-      <li data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
-      <i class="fas fa-globe"></i> Diseño y desarrollo de páginas web 
-    </li>
-  </ul>
-</section>
+  overlay.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
+});
+
+overlay.addEventListener('mouseleave', () => {
+  overlay.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)`;
+});
+</script>
 
 
-  <!-- Contacto -->
-  <section id="contacto" data-aos="fade-right" data-aos-delay="600" data-aos-duration="600">
-    <h2>Contacto</h2>
-    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2236350048" target="_blank">WhatsApp</a></p>
-    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/_tecnoserv" target="_blank">Instagram</a></p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:contacto@tecnoserv.ar?subject=Hola, quisiera más información">contacto@tecnoserv.ar</a></p>
-    <p><i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires</p>
-    </section>
 
 
-  <!-- Pie de página -->
- <footer>
-    <div class="logo-footer">
-        <a href="#encabezado-completo" class="logo" >
-     <img src="logoBN.png" alt="logoTransparente" class="logo-footer" />
-    <p>tecnoserv.ar</p>
-    <p></p>
-  </footer>
-
-
-  <!-- Scripts: Vanta.js, AOS y configuración -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    // Fondo animado con Vanta.NET
-    VANTA.NET({
-      el: "#fondo-animado",
-      color: 0x006cca,               // Color de líneas
-      backgroundColor: 0x111111,     // Fondo oscuro
-      points: 12.0,
-      maxDistance: 20.0,
-      spacing: 15.0
-    });
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+  <script src="js/main.js"></script>
 
-    // Inicialización de animaciones AOS
-    AOS.init();
+ <script>
+    // Al cargar la página, activa la animación del logo
+    window.addEventListener("load", () => {
+      const logo = document.querySelector(".logo-contenedor");
+      logo.classList.add("animar-logo-activo");
+    });
   </script>
+
+
+
+
+
 
 </body>
 
 
+
+
 </html>
-
-
-
-
-
-
-
-
-
