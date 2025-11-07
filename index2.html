@@ -208,10 +208,10 @@
       <div class="footer-col">
         <h4>Navegación</h4>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#">Inicio</a></li>
           <li><a href="#servicios">Servicios</a></li>
           <li><a href="#contacto">Contacto</a></li>
-          <li><a href="privacidad.html">Política de Privacidad</a></li>
+          <li><a id="btn-privacidad">Política de Privacidad</a></li>
         </ul>
       </div>
 
@@ -227,11 +227,48 @@
     <div class="footer-copy">
       <p>© 2025 TecnoServ.ar</p>
     </div>
+
+    <!-- MODAL DE PRIVACIDAD -->
+  <div id="modal-privacidad" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar">&times;</span>
+      <h2>Política de Privacidad</h2>
+      <p>En <strong>TecnoServ</strong> respetamos tu privacidad.
+        Los datos que nos proporcionás a través de este sitio se utilizan únicamente para responder consultas o
+        brindarte información sobre nuestros servicios.
+        No compartimos información personal con terceros y cumplimos con la <strong>Ley N.º 25.326 de Protección de
+          Datos Personales (Argentina)</strong>.</p>
+    </div>
+  </div>
+
   </footer>
 
   <p id="form-mensaje" class="form-mensaje"></p>
 
 
+  <script>
+  const modalPrivacidad = document.getElementById("modal-privacidad");
+  const btnPrivacidad = document.getElementById("btn-privacidad");
+  const btnCerrar = modalPrivacidad.querySelector(".cerrar");
+
+  // Abrir modal
+  btnPrivacidad.onclick = (e) => {
+    e.preventDefault();
+    modalPrivacidad.style.display = "flex";
+  };
+
+  // Cerrar con la X
+  btnCerrar.onclick = () => {
+    modalPrivacidad.style.display = "none";
+  };
+
+  // Cerrar al hacer clic fuera del cuadro
+  window.onclick = (e) => {
+    if (e.target === modalPrivacidad) {
+      modalPrivacidad.style.display = "none";
+    }
+  };
+</script>
 
 
   <script>
