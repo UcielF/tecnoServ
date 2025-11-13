@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TecnoServ | Servicios</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
   <link rel="stylesheet" href="/css/style2.css">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -46,7 +48,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <h1>Diseño y Desarrollo Web</h1>
-          <a href="#servicios" class="btn-hero">Ver más</a>
+          <a href="#desarrollo" class="btn-hero">Descubrir</a>
         </div>
       </div>
 
@@ -55,7 +57,7 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <h1>Marketing digital y gestión de redes</h1>
-          <a href="#servicios" class="btn-hero">Descubrir</a>
+          <a href="#marketing" class="btn-hero">Conocer</a>
         </div>
       </div>
 
@@ -64,21 +66,21 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <h1>Soporte Técnico Integral</h1>
-          <a href="#servicios" class="btn-hero">Solicitar ayuda</a>
+          <a href="#soporte" class="btn-hero">Ver más</a>
         </div>
       </div>
 
-      <!-- Flechas -->
+
       <button class="arrow left" aria-label="Anterior">&#10094;</button>
       <button class="arrow right" aria-label="Siguiente">&#10095;</button>
 
-    </section>
-    
-    <!-- Dots -->
-    <div class="dots"></div>
-  </div>
 
-  <!-- Íconos flotantes a la derecha -->
+      <div class="dots"></div>
+    </div>
+  </section>
+
+
+
   <div class="redes-flotantes">
     <a href="https://instagram.com/_tecnoserv" target="_blank" class="icono instagram">
       <i class="fab fa-instagram"></i>
@@ -93,79 +95,82 @@
   <section id="servicios" class="servicios-section">
     <h2 class="titulo-seccion">Nuestros Servicios </h2>
 
-    <!-- BLOQUE 1: DISEÑO Y DESARROLLO WEB -->
+    <!-- DISEÑO Y DESARROLLO WEB -->
+    <section id="desarrollo">
+      <h3 class="subtitulo-seccion">Diseño y Desarrollo Web</h3>
+      <div class="tarjetas-contenedor">
 
-    <h3 class="subtitulo-seccion">Diseño y Desarrollo Web</h3>
-    <div class="tarjetas-contenedor">
+        <div class="tarjeta-servicio" data-aos="fade-right">
+          <i data-lucide="globe" class="icono-servicio"></i>
+          <h4>Sitios web profesionales</h4>
+          <p>Desarrollamos sitios modernos, rápidos y seguros.</p>
+        </div>
 
-      <div class="tarjeta-servicio" data-aos="fade-right">
-        <i data-lucide="globe" class="icono-servicio"></i>
-        <h4>Sitios web profesionales</h4>
-        <p>Desarrollamos sitios modernos, rápidos y seguros.</p>
+        <div class="tarjeta-servicio" data-aos="fade-left" data-aos-delay="100">
+          <i data-lucide="layout-dashboard" class="icono-servicio"></i>
+          <h4>Landing pages para campañas</h4>
+          <p>Diseños visuales y estratégicos para impulsar tu negocio.</p>
+        </div>
+
+        <div class="tarjeta-servicio" data-aos="fade-up" data-aos-delay="200">
+          <i data-lucide="wrench" class="icono-servicio"></i>
+          <h4>Mantenimiento y actualizaciones</h4>
+          <p>Nos ocupamos del soporte técnico y actualizacion de tu sitio para que funcione al máximo.</p>
+        </div>
       </div>
+    </section>
+    <!-- MARKETING DIGITAL -->
+    <section id="marketing">
+      <h3 class="subtitulo-seccion">Marketing y Gestión de Redes</h3>
+      <div class="tarjetas-contenedor">
 
-      <div class="tarjeta-servicio" data-aos="fade-left" data-aos-delay="100">
-        <i data-lucide="layout-dashboard" class="icono-servicio"></i>
-        <h4>Landing pages para campañas</h4>
-        <p>Diseños visuales y estratégicos para impulsar tu negocio.</p>
+        <div class="tarjeta-servicio" data-aos="fade-left">
+          <i data-lucide="message-circle" class="icono-servicio"></i>
+          <h4>Community management</h4>
+          <p>Gestión estratégica de redes sociales con contenido creativo.</p>
+        </div>
+
+        <div class="tarjeta-servicio" data-aos="fade-right" data-aos-delay="100">
+          <i data-lucide="megaphone" class="icono-servicio"></i>
+          <h4>Publicidad digital</h4>
+          <p>Campañas en Meta Ads y Google Ads enfocadas en resultados.</p>
+        </div>
+
+        <div class="tarjeta-servicio" data-aos="fade-up" data-aos-delay="200">
+          <i data-lucide="palette" class="icono-servicio"></i>
+          <h4>Diseño de contenido visual</h4>
+          <p>Creamos contenido visual y dinamico que comunica el valor de tu marca.</p>
+        </div>
       </div>
+    </section>
+    <!-- REPARACIÓN Y SOPORTE -->
+    <section id="soporte">
+      <h3 class="subtitulo-seccion">Soporte Técnico</h3>
+      <div class="tarjetas-contenedor">
 
-      <div class="tarjeta-servicio" data-aos="fade-up" data-aos-delay="200">
-        <i data-lucide="wrench" class="icono-servicio"></i>
-        <h4>Mantenimiento y actualizaciones</h4>
-        <p>Nos ocupamos del soporte técnico y actualizacion de tu sitio para que funcione al máximo.</p>
+        <div class="tarjeta-servicio" data-aos="fade-right" data-aos-delay="200">
+          <i data-lucide="laptop" class="icono-servicio"></i>
+          <h4>Reparación de PC y notebooks</h4>
+          <p>Diagnóstico, reparación, limpieza interna y optimización del sistema operativo.</p>
+        </div>
+
+        <div class="tarjeta-servicio" data-aos="fade-left" data-aos-delay="100">
+          <i data-lucide="settings" class="icono-servicio"></i>
+          <h4>Instalación y configuración de software</h4>
+          <p>Sistemas operativos, drivers, antivirus y herramientas según tus necesidades.</p>
+        </div>
+
+        <div class="tarjeta-servicio" data-aos="fade-up">
+          <i data-lucide="headphones" class="icono-servicio"></i>
+          <h4>Soporte IT remoto y mantenimiento preventivo</h4>
+          <p>Asistencia a distancia y mantenimiento para mantener tu equipo en óptimo estado.</p>
+        </div>
       </div>
-    </div>
-
-    <!-- BLOQUE 2: MARKETING DIGITAL -->
-    <h3 class="subtitulo-seccion">Marketing y Gestión de Redes</h3>
-    <div class="tarjetas-contenedor">
-
-      <div class="tarjeta-servicio" data-aos="fade-left">
-        <i data-lucide="message-circle" class="icono-servicio"></i>
-        <h4>Community management</h4>
-        <p>Gestión estratégica de redes sociales con contenido creativo.</p>
-      </div>
-
-      <div class="tarjeta-servicio" data-aos="fade-right" data-aos-delay="100">
-        <i data-lucide="megaphone" class="icono-servicio"></i>
-        <h4>Publicidad digital</h4>
-        <p>Campañas en Meta Ads y Google Ads enfocadas en resultados.</p>
-      </div>
-
-      <div class="tarjeta-servicio" data-aos="fade-up" data-aos-delay="200">
-        <i data-lucide="palette" class="icono-servicio"></i>
-        <h4>Diseño de contenido visual</h4>
-        <p>Creamos contenido visual y dinamico que comunica el valor de tu marca.</p>
-      </div>
-    </div>
-
-    <!-- BLOQUE 3: REPARACIÓN Y SOPORTE -->
-    <h3 class="subtitulo-seccion">Soporte Técnico</h3>
-    <div class="tarjetas-contenedor">
-      
-      <div class="tarjeta-servicio" data-aos="fade-right" data-aos-delay="200">
-        <i data-lucide="laptop" class="icono-servicio"></i>
-        <h4>Reparación de PC y notebooks</h4>
-        <p>Diagnóstico, reparación, limpieza interna y optimización del sistema operativo.</p>
-      </div>
-
-      <div class="tarjeta-servicio" data-aos="fade-left" data-aos-delay="100">
-        <i data-lucide="settings" class="icono-servicio"></i>
-        <h4>Instalación y configuración de software</h4>
-        <p>Sistemas operativos, drivers, antivirus y herramientas según tus necesidades.</p>
-      </div>
-
-      <div class="tarjeta-servicio" data-aos="fade-up">
-        <i data-lucide="headphones" class="icono-servicio"></i>
-        <h4>Soporte IT remoto y mantenimiento preventivo</h4>
-        <p>Asistencia a distancia y mantenimiento para mantener tu equipo en óptimo estado.</p>
-      </div>
-    </div>
+    </section>
   </section>
 
 
-  <!--  FORMULARIO CONTACTO  -->
+
 
   <section id="contacto" class="contacto-section">
     <h2 class="titulo-seccion-contacto">Contacto</h2>
@@ -196,7 +201,7 @@
     </form>
 
 
-    
+
   </section>
   <footer class="footer">
     <div class="footer-contenedor">
@@ -218,17 +223,19 @@
       <div class="footer-col">
         <h4>Contacto</h4>
         <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2236350048" target="_blank">WhatsApp</a></p>
-    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/_tecnoserv" target="_blank">Instagram</a></p>
-    <p><i class="fas fa-envelope"></i> <a href="mailto:contacto@tecnoserv.ar?subject=Hola, quisiera más información">contacto@tecnoserv.ar</a></p>
-    <p><i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires</p>
+        <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/_tecnoserv" target="_blank">Instagram</a></p>
+        <p><i class="fas fa-envelope"></i> <a
+            href="mailto:contacto@tecnoserv.ar?subject=Hola, quisiera más información">contacto@tecnoserv.ar</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires</p>
       </div>
     </div>
 
     <div class="footer-copy">
       <p>© 2025 TecnoServ.ar</p>
     </div>
+  </footer>
 
-    <!-- MODAL DE PRIVACIDAD -->
+
   <div id="modal-privacidad" class="modal">
     <div class="modal-contenido">
       <span class="cerrar">&times;</span>
@@ -241,38 +248,36 @@
     </div>
   </div>
 
-  </footer>
-
   <p id="form-mensaje" class="form-mensaje"></p>
 
 
   <script>
-  const modalPrivacidad = document.getElementById("modal-privacidad");
-  const btnPrivacidad = document.getElementById("btn-privacidad");
-  const btnCerrar = modalPrivacidad.querySelector(".cerrar");
+    const modalPrivacidad = document.getElementById("modal-privacidad");
+    const btnPrivacidad = document.getElementById("btn-privacidad");
+    const btnCerrar = modalPrivacidad.querySelector(".cerrar");
 
-  // Abrir modal
-  btnPrivacidad.onclick = (e) => {
-    e.preventDefault();
-    modalPrivacidad.style.display = "flex";
-  };
+    // Abrir modal
+    btnPrivacidad.onclick = (e) => {
+      e.preventDefault();
+      modalPrivacidad.style.display = "flex";
+    };
 
-  // Cerrar con la X
-  btnCerrar.onclick = () => {
-    modalPrivacidad.style.display = "none";
-  };
-
-  // Cerrar al hacer clic fuera del cuadro
-  window.onclick = (e) => {
-    if (e.target === modalPrivacidad) {
+    // Cerrar con la X
+    btnCerrar.onclick = () => {
       modalPrivacidad.style.display = "none";
-    }
-  };
-</script>
+    };
+
+    // Cerrar al hacer clic fuera del cuadro
+    window.onclick = (e) => {
+      if (e.target === modalPrivacidad) {
+        modalPrivacidad.style.display = "none";
+      }
+    };
+  </script>
 
 
   <script>
-    // Espera que cargue la página para iniciar la animación
+
     window.addEventListener("load", () => {
       document.querySelector(".encabezado").classList.add("iniciar");
     });
@@ -291,7 +296,7 @@
     const dotsContainer = document.querySelector('.dots');
     let current = 0;
 
-    // Crear dots dinámicamente
+
     boxes.forEach((_, i) => {
       const dot = document.createElement('span');
       dot.classList.add('dot');
@@ -349,8 +354,8 @@
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
 
-        const rotateX = ((y - centerY) / centerY) * 15;   // intensidad eje X
-        const rotateY = ((x - centerX) / centerX) * -15;  // intensidad eje Y
+        const rotateX = ((y - centerY) / centerY) * 15;
+        const rotateY = ((x - centerX) / centerX) * -15;
 
         const shadowX = (x - centerX) / 20;
         const shadowY = (y - centerY) / 20;
@@ -379,7 +384,7 @@
       let current = 0;
       let autoSlide;
 
-      // Crear dots dinámicamente
+
       boxes.forEach((_, i) => {
         const dot = document.createElement("button");
         if (i === 0) dot.classList.add("active");
@@ -415,7 +420,7 @@
     });
   </script>
 
- 
+
 
 </body>
 

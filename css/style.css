@@ -1,4 +1,4 @@
-/* Paleta base TecnoServ */
+
 :root {
     --negro: #000000;
     --azul-electrico: #1161b7;
@@ -22,7 +22,7 @@ body {
     background-color: var(--negro);
 }
 
-/* Fondo animado */
+
 #background {
     position: fixed;
     top: 0;
@@ -32,7 +32,7 @@ body {
     z-index: -1;
 }
 
-/* Fondo Vanta */
+
 #vanta-bg {
   position: fixed;
   top: 0;
@@ -44,7 +44,7 @@ body {
 
 /* Contenedor central */
 
-/* Fondo translúcido detrás del contenido */
+
 .overlay {
   position: relative;
   z-index: 2;
@@ -63,7 +63,7 @@ body {
   overflow: hidden; /* importante para contener el brillo */
 }
 
-/* 🔮 Al pasar el cursor: leve elevación y rotación tipo carta */
+
 .overlay:hover {
   transform: perspective(1000px) rotateX(8deg) rotateY(-6deg) translateY(-10px);
   box-shadow:
@@ -91,7 +91,7 @@ body {
 }
 
 
-/* Reflejo dinámico */
+
 .overlay::before {
   content: "";
   position: absolute;
@@ -185,7 +185,7 @@ body {
 
 
 
-/* Animación al hacer click */
+/* Animación click */
 body.transicion-salida .logo {
   transform: translateY(-220px) scale(0.45);
   opacity: 0.9;
@@ -227,7 +227,7 @@ body.transicion-salida .hero-content button {
 
 
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
   .encabezado {
     flex-direction: column;
@@ -235,12 +235,25 @@ body.transicion-salida .hero-content button {
     max-width: 100vh;
   }
 
+  .encabezado:hover {
+    box-shadow: 0 10px 45px rgba(125, 44, 255, 0.15);
+  }
+  
   .overlay {
-    padding: 30px 15px;
+    padding: 30px 15px;    
   }
 
-  .btn {
+
+  .overlay .btn {
+  transform: translateY(-30px);
   background-color: var(--color-animado);
+  box-shadow: 0 0 23px var(--color-animado);
+}
+
+  .overlay:hover p {
+  transform: translateZ(55px) scale(1.05);
+  opacity: 0.95;
+  text-shadow: 0 0 0.5px rgb(255, 255, 255);
 }
   
 
