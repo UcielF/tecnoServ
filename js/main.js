@@ -1,7 +1,7 @@
 let vantaEffect;
-let modo = "nodos"; // Cambiá entre "nodos" o "liquido"
+let modo = "nodos"; // "nodos" "liquido"
 
-// Función para mezclar colores (interpolación)
+// colors
 function mezclarColores(color1, color2, porcentaje) {
     const c1 = parseInt(color1.slice(1), 16);
     const c2 = parseInt(color2.slice(1), 16);
@@ -37,30 +37,26 @@ function iniciarFondo() {
             color: 0x7d2cff,
             backgroundColor: 0x000000,
 
-            // 🎯 Ajustes de densidad (menos líneas y puntos)
+         
             points: 15.00,        // antes: 12 → menos nodos
             maxDistance: 23.00,  // antes: 25 → líneas más largas, menos conexiones
             spacing: 25.00,      // antes: 18 → nodos más separados  
 
         });
 
-        // 🌈 Animación sincronizada (fondo + logo + botón)
+       
         const color1 = "#7d2cff"; // violeta
         const color2 = "#007bff"; // azul
         let t = 0;
         let direccion = 1;
-
         setInterval(() => {
             t += direccion * 0.01;
             if (t >= 1) { t = 1; direccion = -1; }
             if (t <= 0) { t = 0; direccion = 1; }
-
             const colorInterpolado = mezclarColores(color1, color2, t);
-
             // Fondo
             const colorDecimal = parseInt(colorInterpolado.slice(1), 16);
             vantaEffect.setOptions({ color: colorDecimal });
-
             // Logo y botón sincronizados
             document.documentElement.style.setProperty('--color-animado', colorInterpolado);
 
@@ -106,4 +102,10 @@ window.addEventListener('scroll', function() {
   } else {
     header.classList.remove('scroll-activo');
   }
+});
+
+const tel = document.getElementById("telefono");
+
+tel.addEventListener("input", () => {
+  tel.value = tel.value.replace(/\D/g, "");
 });

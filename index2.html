@@ -19,7 +19,6 @@
 
 <body>
 
-  <!-- Contenedor del fondo animado -->
   <div id="background"></div>
 
   <header class="encabezado">
@@ -51,7 +50,6 @@
           <a href="#desarrollo" class="btn-hero">Descubrir</a>
         </div>
       </div>
-
       <!-- Hero Box 2 -->
       <div class="hero-box" style="background-image: url('/assets/marketing.jpg');">
         <div class="hero-overlay"></div>
@@ -60,7 +58,6 @@
           <a href="#marketing" class="btn-hero">Conocer</a>
         </div>
       </div>
-
       <!-- Hero Box 3 -->
       <div class="hero-box" style="background-image: url('assets/reparacion1.jpg');">
         <div class="hero-overlay"></div>
@@ -80,15 +77,12 @@
   </section>
 
 
-
   <div class="redes-flotantes">
     <a href="https://instagram.com/_tecnoserv" target="_blank" class="icono instagram">
       <i class="fab fa-instagram"></i>
     </a>
     <a href="https://wa.me/2236350048" target="_blank" class="icono whatsapp">
       <i class="fab fa-whatsapp"></i>
-
-
     </a>
   </div>
 
@@ -183,9 +177,11 @@
       </div>
 
       <div class="campo">
-        <label for="telefono">Numero de telefono</label>
-        <input type="telefono" id="telefono" name="telefono" required placeholder="Numero sin 0 y sin 15">
+        <label for="telefono">Número de teléfono</label>
+        <input type="tel" id="telefono" name="telefono" inputmode="numeric" pattern="[0-9]*" maxlength="15" required
+          placeholder="Número sin 0 y sin 15">
       </div>
+
 
       <div class="campo">
         <label for="email">Correo electrónico</label>
