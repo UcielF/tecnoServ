@@ -228,13 +228,8 @@ body {
 }
 
 /*
-          
-          
-          
-           
-          
-          
-          
+             
+                             
 */
 .hero-intro {
   margin-top: 20px !important;
@@ -440,11 +435,7 @@ body {
 
 /*
 
-                   
-                 
-
-                 
-                 
+                                 
 */
 .icono-servicio {
   width: 60px;
@@ -542,11 +533,7 @@ body {
   ;
 }
 
-/*
 
-==== 3D INTERNO ==== 
- 
-*/
 .tarjeta-servicio {
   position: relative;
   perspective: 1000px;
@@ -606,11 +593,7 @@ body {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.921);
 }
 
-/*                  
-
-
-                 
-
+/*                
                  
                  
 */
@@ -704,7 +687,6 @@ body {
 
 /*                  
 
-=====  ===== 
              
 */
 
@@ -764,7 +746,6 @@ body {
 
 /* 
 
-  === - ===
 
 */
 
@@ -861,7 +842,6 @@ body {
   color: #666;
 }
 
-/* === MODAL === */
 
 .modal {
   display: none;
@@ -993,9 +973,11 @@ body {
   }
 
   .dots {
-    left: 43%;
+    left: 37%;
     bottom: 5%;
   }
+
+  
 
   section {
     scroll-margin-top: 30px;
