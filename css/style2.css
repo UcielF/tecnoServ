@@ -952,8 +952,7 @@ body {
   .btn-hero.btn-activo {
     background: var(--color-animado);
     color: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 0 10px var(--verdeosc);
+    transform: translateY(-3px);    
   }
 
   .arrow {
