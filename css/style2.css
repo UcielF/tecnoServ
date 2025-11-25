@@ -6,15 +6,16 @@
 
 :root {
   --azul-electrico: #1161b7;
-  --color-animado: #7d2cff;
-  --violeta: #a020f063;
+  --color-animado: #7d2cff6c;
+  --violeta: #511178b6;
   --verde: #00ffcc;
   --verdeosc: #087761;
   --negro: #0a0a0a;
   --texto: #cbcbcb;
   --transicion: 0.4s ease;
   --blanco: #ffffff;
-  --gris: #ffffffb6;
+  --gris: #96969683;
+  --gris-claro: #ffffffb6;
 }
 
 
@@ -47,9 +48,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.1rem 1.5rem;
-  /*background: rgba(0, 0, 0, 0.247);*/
-  /*backdrop-filter: blur(1px);*/
-  /* border-bottom: 1px solid rgba(166, 13, 196, 0.205);*/
+  background: rgba(0, 0, 0, 0.516);
+
+
   position: fixed;
   top: -100px;
   width: 100%;
@@ -62,9 +63,11 @@ body {
 
 .encabezado:hover {
   z-index: 2000;
-  box-shadow: 0 0 40px rgba(125, 44, 255, 0.445);
-  backdrop-filter: blur(4px);
-  background-color: rgba(42, 5, 49, 0.247);
+  box-shadow: 0 0 40px rgba(126, 46, 255, 0.499);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.992);
+  overflow-x: hidden;
+
 }
 
 .encabezado.iniciar {
@@ -73,10 +76,9 @@ body {
 }
 
 .encabezado.scroll-activo {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(8px);
-  /*box-shadow: 0 0 25px rgba(125, 44, 255, 0.25);*/
-  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.645);
+  backdrop-filter: blur(7px);
+  overflow-x: hidden;
 }
 
 
@@ -98,8 +100,8 @@ body {
 
 .logo {
   fill: var(--color-animado);
-  width: 70px;
-  filter: drop-shadow(0 0 0.3px var(--color-animado)) drop-shadow(0 0 1px var(--color-animado));
+  filter: drop-shadow(0 0 0.5px var(--color-animado)) drop-shadow(0 0 15px var(--negro));
+  width: 80px;
   cursor: pointer;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
@@ -142,7 +144,6 @@ body {
 
 .menu a:hover {
   filter: drop-shadow(0 0 20px var(--negro))
-    /*  drop-shadow(0 0 15px var(--color-animado));*/
 }
 
 .menu a:after {
@@ -232,7 +233,8 @@ body {
                              
 */
 .hero-intro {
-  margin-top: 20px !important;
+  margin-top: 83px !important;
+  padding-top: 27px !important;
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -241,16 +243,16 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(0.7px);
 
 
   background: linear-gradient(180deg,
-      #00000048 0%,
-      /*#0a0a0a7a 10%,*/
-      var(--color-animado) 60%,
+      #00000078 25%,
+     
       var(--violeta) 95%);
   color: var(--blanco);
   padding: 60px 20px;
-  margin-top: 100px;
+
 }
 
 .hero-slider {
@@ -260,12 +262,12 @@ body {
   max-width: 1500px;
   overflow: hidden;
   display: flex;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 25px rgb(0, 0, 0);
 }
 
 .hero-slider:hover {
   box-shadow: 0 4px 20px var(--negro);
-  ;
+
 }
 
 .hero-box {
@@ -283,7 +285,6 @@ body {
 }
 
 
-/* superposicion oscura */
 .hero-box::before {
   content: "";
   position: absolute;
@@ -378,7 +379,7 @@ body {
 
 .arrow:active {
   filter: drop-shadow(0 0 1px var(--negro));
-  color: var(--violeta); 
+  color: var(--violeta);
 }
 
 .arrow.left {
@@ -447,14 +448,14 @@ body {
 }
 
 .tarjeta-servicio:hover .icono-servicio {
-  transform: translateZ(25px) scale(1.1);  
+  transform: translateZ(25px) scale(1.1);
 }
 
 .servicios-section {
   width: 100%;
   padding: 100px 20px;
   text-align: center;
-  background: linear-gradient(180deg, var(--violeta), #0a0a0a 70%, #050505);
+  background: linear-gradient(180deg, var(--violeta), #0a0a0a 70%, #000000cb);
   position: relative;
   z-index: 5;
 }
@@ -493,6 +494,7 @@ body {
   transform: perspective(1000px) rotateX(8deg) rotateY(-6deg) translateY(-10px);
   box-shadow: 0 0 25px rgba(0, 255, 204, 0.3);
   backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.536) ;
 }
 
 .tarjeta-servicio img {
@@ -583,8 +585,8 @@ body {
 
 .tarjeta-servicio:hover h4 {
   color: var(--verde);
-  transform: translateZ(20px); 
-  text-shadow: 0 0 6px #000; 
+  transform: translateZ(20px);
+  text-shadow: 0 0 6px #000;
 }
 
 .tarjeta-servicio:hover p {
@@ -600,7 +602,7 @@ body {
 .contacto-section {
   position: relative;
   padding: 100px 20px;
-  background: linear-gradient(180deg, #000000 0%, var(--violeta) 100%);
+  background: linear-gradient(180deg, #000000da 0%, var(--violeta) 100%);
   color: var(--blanco);
   text-align: center;
   overflow: hidden;
@@ -615,7 +617,7 @@ body {
   margin-bottom: 20px;
   position: relative;
   z-index: 5;
-  }
+}
 
 
 .intro-contacto {
@@ -683,7 +685,7 @@ body {
 
 .btn-enviar:hover {
   transform: scale(1.05);
- }
+}
 
 /*                  
 
@@ -755,7 +757,7 @@ body {
 
 
   width: 100%;
-  background-color: var(--gris);
+  background-color: var(--gris-claro);
   color: #222;
   border-top: 1px solid var(--violeta);
   padding: 80px 20px 20px;
@@ -922,24 +924,36 @@ body {
 
 
 @media (max-width: 768px) {
+
   .encabezado {
+    background: rgba(0, 0, 0, 0.481);
     flex-direction: column;
     padding: 1rem;
     max-width: 100%;
     /*usar porcentaje, no vh */
   }
 
+  .encabezado:hover {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.992);
+  }
+
   .hero-box {
     width: 100%;
-    /* todo el ancho visible */
     height: 70vh;
-    /* altura menor en móvil */
     border-radius: 0;
-    /* opcional */
   }
 
   .hero-intro {
-    margin-top: 65px !important;
+    margin-top: 0 !important;
+    padding-top: 38% !important;
+  }
+
+  .btn-hero.btn-activo {
+    background: var(--color-animado);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px var(--verdeosc);
   }
 
   .arrow {
@@ -977,7 +991,7 @@ body {
     bottom: 5%;
   }
 
-  
+
 
   section {
     scroll-margin-top: 30px;
