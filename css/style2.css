@@ -657,6 +657,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--blanco);
   outline: none;
+  backdrop-filter: blur(5px);
 }
 
 .campo input::placeholder,
@@ -758,7 +759,7 @@ body {
 
   width: 100%;
   background-color: var(--gris-claro);
-  color: #222;
+  color: #000000;
 
   padding: 80px 20px 20px;
   font-family: inherit;
@@ -801,13 +802,13 @@ body {
 .footer h4 {
   font-size: 1.1rem;
   margin-bottom: 10px;
-  color: #000000;
+  color: #181818;
   cursor: pointer;
 }
 
 .footer p {
   font-size: 0.95rem;
-  color: #252525;
+  color: #393939;
   margin-bottom: 6px;
 }
 
@@ -824,7 +825,7 @@ body {
 
 .footer ul li a {
   text-decoration: none;
-  color: #252525;
+  color: #393939;
   transition: color 0.2s ease;
 }
 
